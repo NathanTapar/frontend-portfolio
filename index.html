@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf4fa">
+  <meta name="description" content="Leoure designs and builds thoughtful websites with Figma, HTML, CSS, and JavaScript. Explore a frontend concept and discuss your next website.">
+  <title>Leoure — Thoughtful design, carefully built</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="icon-mark" viewBox="0 0 32 32"><path d="M7 5h7v14h13v8H7Z" fill="currentColor" stroke="none"/><path d="M21 4v9m-4-4h9" stroke="currentColor" stroke-width="2.5"/></symbol>
+    <symbol id="icon-grid" viewBox="0 0 32 32"><rect x="4" y="5" width="24" height="22" rx="3"/><path d="M4 12h24M13 12v15"/><path d="M8 8.5h.1m3 0h.1"/></symbol>
+    <symbol id="icon-code" viewBox="0 0 32 32"><path d="m11 9-7 7 7 7m10-14 7 7-7 7M18 5l-4 22"/></symbol>
+    <symbol id="icon-frames" viewBox="0 0 32 32"><rect x="3" y="6" width="19" height="15" rx="2"/><rect x="20" y="12" width="9" height="15" rx="2"/><path d="M8 26h10m-5-5v5m11-2h1"/></symbol>
+  </svg>
+
+  <header class="site-header container">
+    <a class="wordmark" href="#" aria-label="Leoure home"><svg><use href="#icon-mark"/></svg>Leoure<span class="wordmark-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-bars" aria-hidden="true"></span><span class="menu-label">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a>
+      <button class="nav-contact" type="button" data-inquiry>Let’s talk <svg class="icon"><use href="#icon-diagonal"/></svg></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="role-label"><span class="role-line" aria-hidden="true"></span>Frontend designer &amp; developer</p>
+        <h1 id="hero-title">Thoughtful design.<br>Carefully built.</h1>
+        <p class="hero-description">Hi, I’m Leoure. I design and build websites that make your business feel like you.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <svg class="icon"><use href="#icon-arrow"/></svg></a>
+          <button class="text-link" type="button" data-inquiry>Have a project in mind? <svg class="icon"><use href="#icon-diagonal"/></svg></button>
+        </div>
+        <p class="hero-note">From your first idea to the final little detail.</p>
+      </div>
+      <div class="hero-stage" aria-label="A preview of the Stillday concept website">
+        <div class="stage-backdrop" aria-hidden="true"></div>
+        <div class="design-tag"><svg class="figma-icon" viewBox="0 0 18 27" aria-hidden="true"><path fill="#F24E1E" d="M4.5 0H9v9H4.5a4.5 4.5 0 0 1 0-9"/><path fill="#FF7262" d="M9 0h4.5a4.5 4.5 0 0 1 0 9H9"/><path fill="#A259FF" d="M4.5 9H9v9H4.5a4.5 4.5 0 0 1 0-9"/><circle cx="13.5" cy="13.5" r="4.5" fill="#1ABCFE"/><path fill="#0ACF83" d="M4.5 18H9v4.5A4.5 4.5 0 1 1 4.5 18"/></svg>Designed with intention</div>
+        <div class="hero-browser">
+          <div class="browser-bar"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>stillday.studio / concept</span><svg class="browser-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5H5v14h14v-4M13 5h6v6m-9 3 9-9"/></svg></div>
+          <img class="hero-preview" src="assets/stillday-preview.jpg" width="1440" height="1050" alt="Stillday coffee studio concept with a warm ivory layout and an illustrated coffee cup" fetchpriority="high">
+        </div>
+        <div class="build-tag"><span class="build-tag-icon" aria-hidden="true">&lt;/&gt;</span><span>Made real with code<small>HTML, CSS &amp; JavaScript</small></span></div>
+        <span class="stage-caption">A little preview of what I can make.</span>
+      </div>
+    </section>
+
+    <div class="craft-strip container"><p>Good-looking is just the beginning.</p><div><span>Considered design</span><span>Responsive layouts</span><span>Thoughtful interactions</span></div></div>
+
+    <section class="work-section container section-space" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="section-kicker">A sample of my work</p><h2 id="work-title">Small details.<br>Considered as a whole.</h2></div><p>A concept brought to life, from the visual direction to the working website.</p></div>
+      <article class="project">
+        <a class="project-visual" href="demo/index.html"><div class="project-visual-inner"><div class="browser-bar"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>Stillday coffee studio</span><svg class="icon"><use href="#icon-diagonal"/></svg></div><img src="assets/stillday-preview.jpg" width="1440" height="1050" alt="Stillday’s homepage: oversized coffee studio typography, an illustrated cup, and a quiet green and cream palette" loading="lazy"></div><span class="project-open">Explore the live demo <svg class="icon"><use href="#icon-diagonal"/></svg></span></a>
+        <div class="project-content"><span class="concept-label">Personal concept project</span><h3>Stillday</h3><p class="project-type">A slower kind of coffee studio.</p><p>A welcoming home on the web for a fictional neighborhood coffee spot. Warm visuals, a simple menu, and a little room to breathe.</p><div class="tags"><span>Visual design</span><span>Frontend development</span></div><a class="text-link strong-link" href="demo/index.html">View live project <svg class="icon"><use href="#icon-diagonal"/></svg></a><details class="project-details"><summary>Behind the design <span aria-hidden="true">+</span></summary><div><p><strong>The idea</strong>Make a small business feel welcoming before a visitor walks through the door.</p><p><strong>The choices</strong>A warm palette, original coffee artwork, clear navigation, and a filterable menu keep the experience focused.</p><p><strong>The build</strong>Responsive HTML, CSS, and JavaScript. This is an independent demo, with no client affiliation or business results claimed.</p></div></details></div>
+      </article>
+    </section>
+
+    <section class="services-section section-space" id="services" aria-labelledby="services-title"><div class="container"><div class="section-heading"><div><p class="section-kicker">How I can help</p><h2 id="services-title">Your idea.<br>A website that fits.</h2></div><p>A clear process and close attention to the way your website looks, feels, and works.</p></div>
+      <div class="services-grid"><article class="service"><svg class="service-icon"><use href="#icon-grid"/></svg><h3>Website design</h3><p>A considered visual direction, clear layouts, and Figma designs shaped around your business.</p><span>From the first frame</span></article><article class="service"><svg class="service-icon"><use href="#icon-code"/></svg><h3>Frontend development</h3><p>Custom HTML, CSS, and JavaScript that turn the design into a website people can use.</p><span>To the working website</span></article><article class="service"><svg class="service-icon"><use href="#icon-frames"/></svg><h3>Landing pages</h3><p>A focused page for your product, service, or next idea, with a clear path to the next step.</p><span>Made for every screen</span></article></div>
+    </div></section>
+
+    <section class="about-section container section-space" id="about" aria-labelledby="about-title"><div class="about-art" aria-hidden="true"><div class="art-window"><span class="art-window-line"></span><div class="art-layout"><div></div><div></div><div></div></div></div><div class="art-cursor"><svg viewBox="0 0 36 42"><path d="M4 3 31 25 19 27 13 38Z"/></svg><span>Leoure</span></div><span class="art-caption">An eye for design.<br>A mind for the details.</span></div><div class="about-copy"><p class="section-kicker">The person behind the pixels</p><h2 id="about-title">Hi, I’m Leoure.</h2><p class="about-lead">I like the space where good design meets a well-built website.</p><p>I work with Figma, HTML, CSS, and JavaScript to bring ideas to the browser. My approach is simple: understand what the page needs to do, make it feel right, and give the details the attention they deserve.</p><p>Have a rough idea, a Figma file, or a fresh start? That’s a place we can begin.</p><div class="tool-list" aria-label="Tools I use"><span>Figma</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="section-kicker">Let’s make something considered</p><h2 id="contact-title">Your next website<br>starts with a hello.</h2><p>Tell me what you have in mind.<br>We can take it from there.</p></div><div class="contact-actions"><button class="button button-primary contact-button" type="button" data-inquiry>Let’s discuss your project <svg class="icon"><use href="#icon-diagonal"/></svg></button><p class="sample-note" id="contact-setup-note">Prefer a direct hello? <a href="mailto:leoureweb@gmail.com">leoureweb@gmail.com</a></p></div></div></section>
+  </main>
+
+  <footer class="site-footer container"><a class="wordmark" href="#" aria-label="Leoure home"><svg><use href="#icon-mark"/></svg>Leoure<span class="wordmark-dot">.</span></a><p>Designed with care. Built by Leoure.</p><a class="back-top" href="#">Back to top <svg class="icon"><use href="#icon-diagonal"/></svg></a></footer>
+
+  <dialog class="inquiry-dialog" id="inquiry-dialog" aria-labelledby="inquiry-title" aria-describedby="inquiry-intro">
+    <button class="dialog-close" type="button" aria-label="Close project inquiry">×</button>
+    <p class="section-kicker">A good place to start</p>
+    <h2 id="inquiry-title">What are you imagining?</h2>
+    <p id="inquiry-intro">Tell me a little about your idea. Send your request here and I’ll reply by email.</p>
+    <form id="inquiry-form" action="https://formsubmit.co/ajax/leoureweb@gmail.com" method="POST" aria-busy="false">
+      <input type="hidden" name="_subject" value="New project inquiry for Leoure">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+      <div class="form-row">
+        <label>Your name<input name="name" autocomplete="name" placeholder="How should I call you?" maxlength="100" required></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required></label>
+      </div>
+      <label>What do you need?<select name="service" required><option value="">Choose a service</option><option>Website design</option><option>Frontend development</option><option>Landing page</option><option>Design and development</option></select></label>
+      <label>A little about your project<textarea name="message" rows="4" placeholder="What are you making, and what would you like the website to do?" maxlength="5000" required></textarea></label>
+      <button class="button button-primary form-submit" type="submit"><span id="inquiry-submit-label">Send request</span><svg class="icon"><use href="#icon-arrow"/></svg></button>
+      <p class="form-status" id="inquiry-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Your details are sent through FormSubmit to handle your inquiry. You can also <a href="mailto:leoureweb@gmail.com">email me directly</a>.</p>
+    </form>
+  </dialog>
+</body>
+</html>

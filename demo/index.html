@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e6">
+  <meta name="description" content="Stillday: an original coffee studio website concept by Leoure. Explore the responsive design and interactive sample menu.">
+  <title>Stillday — Coffee, slowly. A concept by Leoure</title>
+  <link rel="icon" href="assets/sun.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="demo.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="concept-bar">
+    <span>A little make-believe, made with care. <span class="concept-extra">A website concept by Leoure.</span></span>
+    <a href="../index.html#work">Back to portfolio <span aria-hidden="true">↗</span></a>
+  </div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Stillday home">stillday<span class="wordmark-sun" aria-hidden="true">✳</span></a>
+    <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false">Menu <span aria-hidden="true">+</span></button>
+    <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+      <a href="#menu">The menu</a>
+      <a href="#story">Our little story</a>
+      <a href="#visit" class="nav-visit">Stay a while <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="small-intro"><span class="tiny-sun" aria-hidden="true">✳</span> Coffee, slowly.</p>
+        <h1 id="hero-title">A little pause.<br>A better day.</h1>
+        <p class="hero-description">Good coffee. Something sweet. A quiet corner to make a little more of the everyday.</p>
+        <a href="#menu" class="button">Find your usual <span aria-hidden="true">↗</span></a>
+        <p class="hero-footnote">For the first sip.<span>And everything after.</span></p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/coffee-still-life.svg" alt="An original illustration of a ceramic cup of coffee on a sage saucer, with a silver spoon and coffee beans on a sunlit table." width="1000" height="1120" fetchpriority="high">
+        <div class="art-note"><span aria-hidden="true">☀</span><span>A cup of something good.</span></div>
+      </div>
+    </section>
+    <div class="philosophy">
+      <span class="philosophy-mark" aria-hidden="true">✳</span>
+      <p>Some things are better<br>when you take your time.</p>
+      <span class="philosophy-side">A slower kind of coffee studio.</span>
+    </div>
+    <section class="menu-section section-shell" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">Made for your moment</p><h2 id="menu-title">A few good things.</h2></div>
+        <p>A small menu. Plenty to love.<br>Illustrative menu · prices in USD.</p>
+      </div>
+      <div class="menu-filters" role="group" aria-label="Filter the sample menu">
+        <button type="button" class="filter-button" data-filter="all" aria-pressed="true">Everything</button>
+        <button type="button" class="filter-button" data-filter="coffee" aria-pressed="false">Coffee</button>
+        <button type="button" class="filter-button" data-filter="tea" aria-pressed="false">Tea &amp; other things</button>
+      </div>
+      <p class="sr-only" id="filter-status" role="status">Showing all 6 menu items.</p>
+      <div class="menu-grid" id="menu-items">
+        <article class="menu-item" data-category="coffee"><div><h3>The everyday espresso</h3><p>A short, rich little ritual.</p></div><span class="price">3.50</span></article>
+        <article class="menu-item" data-category="coffee"><div><h3>Flat white</h3><p>Velvety milk. A lovely balance.</p></div><span class="price">4.50</span></article>
+        <article class="menu-item" data-category="coffee"><div><h3>Slow morning latte</h3><p>Espresso, oat milk, a softer start.</p></div><span class="price">5.00</span></article>
+        <article class="menu-item" data-category="coffee"><div><h3>Over ice</h3><p>Cold brew with a mellow finish.</p></div><span class="price">4.75</span></article>
+        <article class="menu-item" data-category="tea"><div><h3>Matcha, please</h3><p>Earthy green tea, gently whisked.</p></div><span class="price">5.25</span></article>
+        <article class="menu-item" data-category="tea"><div><h3>A pot of calm</h3><p>Chamomile, lemon balm, nothing to rush.</p></div><span class="price">4.00</span></article>
+      </div>
+      <p class="menu-note">A little interaction to explore: choose a category to find your next cup.</p>
+    </section>
+    <section class="story-section" id="story" aria-labelledby="story-title">
+      <div class="story-illustration" aria-hidden="true">
+        <span class="story-ring ring-one"></span><span class="story-ring ring-two"></span><span class="story-ring ring-three"></span>
+        <span class="story-sun">✳</span><p>Take a breath.<br>Take a sip.</p><span class="story-bottom">The Stillday state of mind</span>
+      </div>
+      <div class="story-copy"><p class="section-kicker">The idea behind Stillday</p><h2 id="story-title">Less hurry.<br>More here.</h2><p>Stillday imagines a neighbourhood coffee studio that feels like a deep breath. A warm welcome, considered details, and a reason to put your phone away for a minute.</p><p>This is an independent design concept by Leoure, exploring how a small business can feel just as welcoming online as it would in person.</p><a href="#visit" class="text-link">Pull up a chair <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="visit-section section-shell" id="visit" aria-labelledby="visit-title">
+      <p class="section-kicker">A fictional place. A familiar feeling.</p>
+      <h2 id="visit-title">Your next good idea<br>could start over coffee.</h2>
+      <p>Stillday is a sample website, made to show what a thoughtful frontend can do for a small business. Have a real business in mind?</p>
+      <a href="../index.html#contact" class="button">Meet the designer <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="footer"><a class="wordmark" href="#" aria-label="Back to Stillday top">stillday<span aria-hidden="true">✳</span></a><p>An original concept by <a href="../index.html">Leoure</a>.<br>Made with HTML, CSS &amp; a little JavaScript.</p><a href="#main" class="back-top">Back to the beginning <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
